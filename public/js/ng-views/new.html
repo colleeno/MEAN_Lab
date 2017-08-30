@@ -1,11 +1,27 @@
 <form ng-submit="vm.createMovie(vm.newMovie)">
   <input type="text" id="title"
-         aria-label="title"
-         ng-model="vm.newMovie.title"
-         placeholder="movie name">
+       aria-label="title"
+       ng-model="vm.newMovie.title"
+       placeholder="movie name">
   <textarea id="description"
-  aria-label="description"
-  ng-model="vm.newMovie.description"
-  placeholder="movie description"></textarea>
+      aria-label="description"
+      ng-model="vm.newMovie.description"
+      placeholder="movie description" class="description"></textarea>
+  <textarea id="tagline"
+      aria-label="tagline"
+      ng-model="vm.newMovie.tagline"
+      placeholder="movie tagline" class="tagline"></textarea>
+      <input type="text" id="director"
+           aria-label="director"
+           ng-model="vm.newMovie.director"
+           placeholder="movie director">
+       <input type="text" id="score"
+            aria-label="score"
+            ng-model="vm.newMovie.score"
+            placeholder="movie score">
+      <input type="text" id="rating"
+           aria-label="rating"
+           ng-model="vm.newMovie.rating"
+           placeholder="movie rating">
   <button type="submit">Create</button>
 </form>

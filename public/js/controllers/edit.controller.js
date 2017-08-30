@@ -10,7 +10,8 @@ function MovieEditController (Movie, $state, $stateParams) {
   this.movie = Movie.get({ id: $stateParams.id })
 
   this.updateMovie = function () {
-    this.movie.$save().then((movie) => {
+    this.movie.$update({id: $stateParams.id}).then((movie) => {
+      console.log(movie)
       $state.go('movieShow', { id: movie._id })
     }).catch((err) => {
       console.log(err)

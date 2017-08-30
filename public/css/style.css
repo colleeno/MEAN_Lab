@@ -54,7 +54,8 @@ h2, p {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
+  color: red;
 }
 
 p {
@@ -72,4 +73,37 @@ p {
 .actors {
   border-top: 2px solid red;
   padding-top: 2%;
+}
+
+.edit-link {
+  color: white;
+  font-size: 1.5em;
+}
+
+form {
+  margin-top: 5%;
+}
+
+form input, button, .description, .tagline {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid #666666;
+  background-color: rgba(255,255,255,0.5);
+  font-size: 18px;
+  text-align: center;
+  width: 300px;
+}
+
+.placeholder, input {
+
+}
+
+button {
+  cursor: pointer;
+  width: 324px;
+}
+
+.delete {
+  margin-top: -2%;
 }
