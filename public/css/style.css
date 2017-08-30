@@ -22,6 +22,7 @@ h1 {
 h1 a {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 h1 a:hover {
@@ -56,6 +57,10 @@ h2, p {
 h2 {
   font-size: 2em;
   color: red;
+}
+
+h2 a {
+  cursor: pointer;
 }
 
 p {
