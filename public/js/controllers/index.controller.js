@@ -6,4 +6,5 @@ angular.module('movieApp')
 
 function MovieIndexController (Movie) {
     this.movies = Movie.query()
+    console.log("hi");
   }

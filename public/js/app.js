@@ -11,8 +11,10 @@ angular.module('movieApp', [
 function RouterFunction ($stateProvider) {
   $stateProvider
   .state('movieIndex', {
-    url: '/movies',
-    templateUrl: './js/ng-views/index.html',
+    // doesn't work why?
+    //     url: '/movies',
+    url: '',
+    templateUrl: 'js/ng-views/index.html',
     controller: 'MovieIndexController',
     controllerAs: 'vm'
   })
