@@ -1,0 +1,11 @@
+<form ng-submit="vm.createMovie(vm.newMovie)">
+  <input type="text" id="title"
+         aria-label="title"
+         ng-model="vm.newMovie.title"
+         placeholder="movie name">
+  <textarea id="description"
+  aria-label="description"
+  ng-model="vm.newMovie.description"
+  placeholder="movie description"></textarea>
+  <button type="submit">Create</button>
+</form>
