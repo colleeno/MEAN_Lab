@@ -1,0 +1,33 @@
+body {
+  /*background-color: #404040;*/
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 3px solid red;
+  padding: 2% 10%;
+
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 2% 10%;
+}
+
+.img-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  -ms-transform: rotate(-7deg); /* IE 9 */
+  -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+  transform: rotate(-7deg);
+}
+
+.test-img {
+  width: 400px;
+  height: auto;
+}
