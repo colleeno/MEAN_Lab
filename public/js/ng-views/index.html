@@ -1,0 +1,4 @@
+<div ng-repeat="movie in vm.movies" class="movie-wrapper">
+  <h2><a ng-click="vm.showMovie(movie._id)">{{movie.title}}</a></h2>
+  <p>{{movie.description}}</p>
+</div>

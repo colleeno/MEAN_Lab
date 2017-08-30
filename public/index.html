@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MEAN Movies</title>
+    <base href="/" target="_blank">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <script src="angular/angular.js" charset="utf-8"></script>
+    <script src="angular-resource/angular-resource.js" charset="utf-8"></script>
+    <script src="@uirouter/angularjs/release/angular-ui-router.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <script src="js/services/movieApp.service.js"></script>
+    <script src="js/controllers/index.controller.js"></script>
+    <script src="js/controllers/show.controller.js"></script>
+    <script src="js/controllers/new.controller.js"></script>
+    <script src="js/controllers/edit.controller.js"></script>
+  </head>
+  <body ng-app="movieApp">
+    <header>
+      <h1><a data-ui-sref="movieIndex">MEAN Movies</a> | <a data-ui-sref="movieNew">Add movie<a/></h1>
+    </header>
+    <main ui-view>
+    </main>
+  </body>
+</html>

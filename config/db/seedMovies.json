@@ -1,0 +1,60 @@
+[
+  {
+    "title": "Braveheart",
+    "year": 1995,
+    "tagline": "Every man dies, not every man really lives.",
+    "director": "Mel Gibson",
+    "score": 10,
+    "rating": "R",
+    "actors": [
+      {
+        "name": "Mel Gibson",
+        "age": 60,
+        "bio": "Mel Columcille Gerard Gibson was born January 3, 1956 in Peekskill, New York, USA, as the sixth of eleven children of Hutton Gibson, a railroad brakeman, and Anne Patricia (Reilly) Gibson (who died in December of 1990). His mother was Irish, from County Longford, while his American-born father is of mostly Irish descent"
+      }
+    ],
+    "description":  "William Wallace leads a revolt against King Edward I"
+  },
+  {
+    "title": "Finding Nemo",
+    "year": 2003,
+    "tagline": "Wet Yourself!",
+    "director": "Andrew Stanton",
+    "score": 8,
+    "rating": "G",
+    "actors": [
+      {
+        "name": "Ellen DeGeneres",
+        "age": 60,
+        "bio": "Emmy-winning talk show host Ellen Lee DeGeneres was born in Metairie, Louisiana, a New Orleans suburb."
+      },
+      {
+        "name": "Alexander Gould",
+        "age": 20,
+        "bio": "Gould was born and raised in Los Angeles, California, to parents Valerie and Tom Gould."
+      }
+    ],
+    "description": "Clownfish Marlon searches for his missing son Nemo after he gets picked up by a scuba diver"
+  },
+  {
+    "title": "Wonder Woman",
+    "year": 2017,
+    "tagline": "Power. Grace. Wisdom. Wonder.",
+    "director": "Patty Jenkins",
+    "score": 7,
+    "rating": "PG-13",
+    "actors": [
+      {
+        "name": "Gal Gadot",
+        "age": 32,
+        "bio": "Gal Gadot is an Israeli actress, singer, martial artist, and model. She was born in Rosh Ha'ayin, Israel, to an Ashkenazi Jewish family."
+      },
+      {
+        "name": "Chris Pine",
+        "age": 38,
+        "bio": "Chris Pine was born in Los Angeles."
+      }
+    ],
+    "description": "Amazon warrior leaves home to fight in a war and save the world"
+  }
+]

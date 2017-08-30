@@ -1,0 +1,31 @@
+<form ng-submit="vm.updateMovie()">
+  <input type="text" class="title"
+   aria-label="title"
+   ng-model="vm.movie.title"
+   value="vm.movie.title">
+  <textarea class="description"
+    aria-label="description"
+    ng-model="vm.movie.description"
+    value="vm.movie.description"></textarea>
+  <textarea class="tagline"
+   aria-label="tagline"
+   ng-model="vm.movie.tagline"
+   value="vm.movie.tagline"></textarea>
+  <input type="text" class="director"
+    aria-label="director"
+    ng-model="vm.movie.director"
+    value="vm.movie.director">
+  <input type="text" class="score"
+         aria-label="score"
+         ng-model="vm.movie.score"
+         value="vm.movie.score">
+ <input type="text" class="rating"
+        aria-label="rating"
+        ng-model="vm.movie.rating"
+        value="vm.movie.rating">
+  <button type="submit">Update</button>
+</form>
+
+<form ng-submit="vm.deleteMovie()">
+  <button type="submit" class="delete">Delete</button>
+</form>

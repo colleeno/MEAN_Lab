@@ -1,0 +1,15 @@
+<div class="show">
+<div class = "movie-info">
+  <h2>{{vm.movie.title}}</h2>
+  <p>"{{vm.movie.tagline}}"</p>
+  <p>{{vm.movie.description}}</p>
+  <p>Released in {{vm.movie.year}}</p>
+  <p>Our score: {{vm.movie.score}}</p>
+  <p>Film rating: {{vm.movie.rating}}</p>
+</div>
+<div ng-repeat="actor in vm.movie.actors" class="actors">
+  <p>Starring: {{actor.name}}, {{actor.age}}</p>
+  <p>{{actor.bio}}</p>
+</div>
+<a ui-sref="movieEdit({id: vm.movie._id})" class="edit-link">Edit or Delete Movie</a>
+</div>
