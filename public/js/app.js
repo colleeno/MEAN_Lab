@@ -12,7 +12,7 @@ function RouterFunction ($stateProvider) {
   $stateProvider
   .state('movieIndex', {
     url: '/movies',
-    templateUrl: 'js/ng-views/index.html',
+    templateUrl: './js/ng-views/index.html',
     controller: 'MovieIndexController',
     controllerAs: 'vm'
   })
