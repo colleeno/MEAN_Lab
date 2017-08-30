@@ -5,15 +5,17 @@ angular.module('movieApp', [
 ])
 .config([
   '$stateProvider',
+  '$locationProvider',
   RouterFunction
 ])
 
-function RouterFunction ($stateProvider) {
+function RouterFunction ($stateProvider, $locationProvider) {
+  $locationProvider.html5Mode(true)
   $stateProvider
   .state('movieIndex', {
     // doesn't work why?
     //     url: '/movies',
-    url: '',
+    url: '/movies',
     templateUrl: 'js/ng-views/index.html',
     controller: 'MovieIndexController',
     controllerAs: 'vm'
