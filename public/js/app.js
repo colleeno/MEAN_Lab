@@ -18,4 +18,13 @@ function RouterFunction ($stateProvider) {
     controller: 'MovieIndexController',
     controllerAs: 'vm'
   })
+  $stateProvider
+  .state('movieShow', {
+    // doesn't work why?
+    //     url: '/movies',
+    url: '/movies/:id',
+    templateUrl: 'js/ng-views/show.html',
+    controller: 'MovieShowController',
+    controllerAs: 'vm'
+  })
 }

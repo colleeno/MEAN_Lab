@@ -10,8 +10,8 @@ router.param('movieId', movies.load)
 router.get('/movies', movies.index)
 router.post('/movies', movies.create)
 router.get('/movies/:movieId', movies.show)
-// router.put('/movies/:movieId', movies.update)
-// router.delete('/movies/:movieId', movies.destroy)
+router.put('/movies/:movieId', movies.update)
+router.delete('/movies/:movieId', movies.destroy)
 
 /* Error Handling */
 
