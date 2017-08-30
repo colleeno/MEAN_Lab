@@ -1,7 +1,7 @@
 const express = require('express')
 // middleware
 const morgan = require('morgan')
-const bodyParser = require('bodyParser')
+const bodyParser = require('body-parser')
 const cors = require('cors')
 
 const config = require('./')

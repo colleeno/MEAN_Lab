@@ -1,4 +1,4 @@
-const mongoose = ('mongoose')
+const mongoose = require('mongoose')
 const connect = require('./connect')
 const config = require('../')
 const movieSeeds = require('./seedMovies')
