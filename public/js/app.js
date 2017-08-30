@@ -33,5 +33,12 @@ function RouterFunction ($stateProvider, $locationProvider, $urlRouterProvider) 
     controller: 'MovieShowController',
     controllerAs: 'vm'
   })
+  $stateProvider
+  .state('movieEdit', {
+    url: '/movies/:id/edit',
+    templateUrl: 'js/ng-views/edit.html',
+    controller: 'MovieEditController',
+    controllerAs: 'vm'
+  })
   $urlRouterProvider.otherwise('/movies')
 }

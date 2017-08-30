@@ -2,14 +2,15 @@ angular.module('movieApp')
 .controller('MovieEditController', [
   'Movie',
   '$state',
+  '$stateParams',
   MovieEditController
 ])
 
-function MovieEditController (Movie, $state) {
-  this.movie = Notes.get({ id:$stateParams._id });
+function MovieEditController (Movie, $stateParams, $state) {
+  this.movie = Movie.get({ id: $stateParams.id })
 
-  this.createMovie = function () {
-    this.newMovie.$save().then((movie) => {
+  this.updateMovie = function () {
+    this.movie.$save().then((movie) => {
       $state.go('movieShow', { id: movie._id })
     }).catch((err) => {
       console.log(err)

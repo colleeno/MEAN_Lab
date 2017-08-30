@@ -7,6 +7,6 @@ angular
 
 function movieService ($resource) {
   return $resource('http://localhost:3000/api/movies/:id', {}, {
-      update: {method: 'PUT'}
-    })
+    update: {method: 'PUT'}
+  })
 }

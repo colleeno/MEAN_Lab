@@ -6,6 +6,5 @@ angular.module('movieApp')
 ])
 
 function MovieShowController (Movie, $stateParams) {
-  // console.log(#);
   this.movie = Movie.get({ id: $stateParams.id })
 }
