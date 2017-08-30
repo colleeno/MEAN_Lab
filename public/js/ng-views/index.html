@@ -1,5 +1,5 @@
-<div ng-repeat="movie in vm.movies">
-  <a data-ui-sref="movieShow({ id: movie._id })">{{movie._id}}</a>
-  <h2>title: {{movie.title}}</h2>
-  <p>description: {{movie.description}}</p>
+<div ng-repeat="movie in vm.movies" class="movie-wrapper">
+  <!-- <a data-ui-sref="movieShow({ id: movie._id })">{{movie._id}}</a> -->
+  <h2><a data-ui-sref="movieShow({ id: movie._id })">{{movie.title}}</a></h2>
+  <p>{{movie.description}}</p>
 </div>
