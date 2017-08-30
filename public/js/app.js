@@ -27,17 +27,17 @@ function RouterFunction ($stateProvider, $locationProvider, $urlRouterProvider) 
     controllerAs: 'vm'
   })
   $stateProvider
-  .state('movieShow', {
-    url: '/movies/:id',
-    templateUrl: 'js/ng-views/show.html',
-    controller: 'MovieShowController',
-    controllerAs: 'vm'
-  })
-  $stateProvider
   .state('movieEdit', {
     url: '/movies/:id/edit',
     templateUrl: 'js/ng-views/edit.html',
     controller: 'MovieEditController',
+    controllerAs: 'vm'
+  })
+  $stateProvider
+  .state('movieShow', {
+    url: '/movies/:id',
+    templateUrl: 'js/ng-views/show.html',
+    controller: 'MovieShowController',
     controllerAs: 'vm'
   })
   $urlRouterProvider.otherwise('/movies')
