@@ -32,6 +32,24 @@ module.exports = {
         errors: [err.toString()]
       })
     })
-  }
+  },
 
+  update: (req, res) => {
+    const movie = req.movie
+    Object.assign(movie, req.body)
+    movie.save()
+    .then(movie => res.json(movie))
+    .catch((err) => {
+      res.json({
+        message: `Error updating Movie id: ${movie._id}`,
+        errors: [err.toString()]
+      })
+    })
+  },
+  destroy: (req, res) => {
+    req.movie.remove()
+    .then(_ => res.json({
+      message: 'Movie deleted'
+    }))
+  }
 } // end export
