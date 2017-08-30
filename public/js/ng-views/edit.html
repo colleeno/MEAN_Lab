@@ -1,0 +1,11 @@
+<form ng-submit="vm.updateMovie(vm.movie)">
+  <input type="text" class="title"
+         aria-label="title"
+         ng-model="vm.movie.title"
+         value="vm.movie.title">
+  <textarea class="description"
+  aria-label="description"
+  ng-model="vm.movie.description"
+  value="vm.movie.description"></textarea>
+  <button type="submit">Update</button>
+</form>
