@@ -23,9 +23,9 @@
         aria-label="rating"
         ng-model="vm.movie.rating"
         value="vm.movie.rating">
-  <button type="submit">Update</button>
+  <button name="submit" type="submit" ng-click="vm.updateMovie()">Update</button>
 </form>
 
 <form ng-submit="vm.deleteMovie()">
-  <button type="submit" class="delete">Delete</button>
+  <button type="submit" class="delete" ng-click="vm.deleteMovie()">Delete</button>
 </form>

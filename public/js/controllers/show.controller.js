@@ -1,11 +1,16 @@
 angular.module('movieApp')
 .controller('MovieShowController', [
   'Movie',
+  '$state',
   '$stateParams',
   MovieShowController
 ])
 
-function MovieShowController (Movie, $stateParams) {
-  console.log($stateParams);
-  this.movie = Movie.get({ id: $stateParams.id })
+function MovieShowController (Movie, $state, $stateParams) {
+  this.params = { id: $stateParams.id }
+  this.movie = Movie.get(this.params)
+
+  this.editMovie = function () {
+    $state.go('movieEdit', this.params)
+  }
 }
